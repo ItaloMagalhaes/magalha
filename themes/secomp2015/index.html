@@ -1,0 +1,2180 @@
+<?php
+	session_start();
+
+//DESTRÓI AS VARIÁVEIS
+unset($_SESSION["nome"]);
+unset($_SESSION["email"]);
+unset($_SESSION["pass"]);
+unset($_SESSION["Login"]);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IV SECOMP </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			<div class="container">
+		        <div class="row">	        		
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+							<!-- logo do site -->
+		                	<img class="img-responsive" src="images/logo.png" alt="logo">
+		                </a>                    
+		            </div>
+		            <div class="collapse navbar-collapse">
+		                <ul class="nav navbar-nav navbar-right">                 
+		                    <li class="scroll"><a href="#home">Home</a></li>                         
+		                    <li class="scroll"><a href="#about">Sobre</a></li>  
+		                    <li class="scroll"><a href="#event">Palestrantes</a></li> 
+		                    <li class="scroll"><a href="#event2">Ministrantes</a></li> 
+		                    <li class="scroll"><a href="#agenda">Agenda</a></li>   
+		                    <li class="scroll"><a href="#sponsor">Apoio</a></li>                
+		                   <!-- <li class="scroll"><a href="#login">Login</a></li> -->
+		                    <li class="scroll "><a href="#contact">Contato</a></li>       
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+    </header>
+    <!--/#header--> 
+
+    <section id="home">	
+		<div id="main-slider" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="img-responsive" src="imagensSite/Secomp_siteHome.png" alt="slider">						
+					<div class="carousel-caption">
+						<h2>Inscrições </h2>
+						<a href="http://secomp2015.linkedej.com.br/inscricao/sistema.php?acao=site/telaInicial">Link <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>		
+			</div>
+		</div>    	
+    </section>
+	<!--/#home-->
+	<section id="explore">
+		<div class="container">
+			<div class="row">
+				<div class="watch">
+					<img class="img-responsive" src="imagensSite/Secomp_siteContagem.png" alt="">
+				</div>				
+				<div class="col-md-4 col-md-offset-2 col-sm-5">
+					<h2>A <strong>IV SECOMP</strong> começa:</h2>
+				</div>				
+				<div class="col-sm-7 col-md-6">					
+					<div id="informativo">	
+						<p><h1 align="center">Amanhã</h1></p>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#explore-->
+	
+	<section id="about"><!--/#about-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-6">
+					<h2>IV Secomp</h2>
+				</div>
+				<div class="col-md-6 col-md-offset-6">
+					<p style="text-align:justify;">A Semana da Computação da Universidade Federal de São João del-Rei, que em sua quarta edição acontecerá no período de 17/08/2015 a 21/08/2015, é formada por talentosos e engajados jovens da área de tecnologia. Gostaríamos de convidá-lo a participar da nossa história e proporcionar a oportunidade ímpar do crescimento de futuros profissionais no mercado de trabalho. Durante os quatro dias de realização da IV Semana da Computação - SECOMP, jovens universitários do curso de Ciência da Computação da Universidade Federal de São João del-Rei – UFSJ – e demais interessados participarão do evento com o intuito de obter conhecimento e capacitação profissional através de cursos, networking, benchmarking e palestras.</p>	
+					  <br>
+					<Br>
+					<br>
+					<Br>
+					<br>
+					<Br>	
+					<br>
+					<Br>
+					<br>
+					<Br>
+					<br>
+					<Br>
+					<br>
+
+			</div>
+		</div>
+	</section><!--/#about-->
+	
+
+<section id="event" style="margin-top: -10%;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-9">
+				<div id="event-carousel" class="carousel slide" data-interval="false">
+					<h2 class="heading">PALESTRANTES</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+							<!-- inicio do slide -->
+						<div class="carousel-inner">
+							<!--1ª passada-->
+							<div class="item active">
+								<div class="row">
+
+									<!--1ª pessoa da 1ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/rodrigo.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Rodrigo Senra</h4>
+											
+											<!-- Botão que chama o modal -->
+											<!-- primary (azul) success (verde) warming (laranja) danger (vermelho) style="background-color:#fffeee;" -->
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal" align="middle"> <!-- data - target link para o modal -->
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModalA"> <!-- data - target link para o modal -->
+											  Atividade
+											</button>
+
+											<!-- Modal -->
+											<!-- data targettem que ser igual ao id -->
+											<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Rodrigo Senra</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Cientista de Dados no centro de pesquisa da EMC no Rio de Janeiro.
+													Engenheiro de Computação, com mestrado e doutorado pelo IC-Unicamp.
+													Profissional com 20 anos de experiência no projeto e desenvolvimento de software.
+													Ex-professor da PUC-Campinas.</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModalA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Python: cabe no seu bolso, no seu micro e no seu cérebro.</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Python se tornou uma das linguagens de programação mais importantes da atualidade.
+													Nesta palestra, através de uma abordagem bem-humorada e divertida, vamos explorar o histórico da linguagem (e as influências de outras linguagens), em que contextos tem sido utilizada (e quando não deve ser usada), e as suas características principais que lhe conferem um diferencial competitivo em relação a outras linguagens de programação.
+													No final apresentaremos um exemplo de uso de Python com Spark. </p>
+													
+												
+													<h3>Data:<strong>21/08/2015</strong></h3>
+													<h3>Horário:<strong>13:30</strong></h3>
+													<h3>Local:<strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<!--fim da 1ª pessoa da 1ª passada no slide-->
+
+
+									<!--2ª pessoa da 1ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/ricardo.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Ricardo Terra</h4>
+											
+											<!-- Botão que chama o modal -->
+											<!-- primary (azul) success (verde) warming (laranja) danger (vermelho) style="background-color:#fffeee;" -->
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2"> <!-- data - target link para o modal -->
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2A"> <!-- data - target link para o modal -->
+											  Atividade
+											</button>
+
+											<!-- Modal -->
+											<!-- data targettem que ser igual ao id -->
+											<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Ricardo Terra</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Ricardo Terra é doutor em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG) com período sanduíche na University of Waterloo (UWaterloo) e pós-doutorado no INRIA/Université Lille 1. Desde fevereiro de 2014, é professor adjunto do Departamento de Ciência da Computação (DCC) da Universidade Federal de Lavras (UFLA). É professor permanente do Programa de Pós-Graduação em Ciência da Computação (PPGCC) atuando em Arquitetura de Software e Engenharia de Software</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal2A" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Palestra "Análise Estática de Código para melhorar a qualidade do Software"</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Várias técnicas têm sido desenvolvidas para automaticamente encontrar erros nos sistemas. Análise estática de código é um dos instrumentos conhecidos pela engenharia de software para a mitigação de erros, seja por sua utilização para a verificação de regras de estilos, para a verificação de erros ou ambos. Checkstyle, FindBugs, PMD, Klocwork Developer são algumas das diversas ferramentas automáticas para a linguagem Java que ajudam a reduzir o número de erros utilizando análise estática de código. O objetivo desta palestra é apresentar o que essas ferramentas são capazes e o que isso ajuda na qualidade final do sistema de software.
+													</p>
+									
+													<h3>Data: <strong>20/08/2015</strong></h3>
+													<h3>Horário: <strong>13:30 </strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<!--fim da 2ª pessoa da 1ª passada no slide-->
+
+
+									<!--3ª pessoa da 1ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/ana.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Ana Maria Biavati Guimarães</h4>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3LL"> <!-- data - target link para o modal -->
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal3A2"> <!-- data - target link para o modal -->
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal3LL" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Ana Maria Biavati</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Ana Maria Biavati Guimarães é Filósofa e Psicóloga, formada pela Universidade Federal de São João del-Rei, Especialista em Gestão de Pessoas e de Projetos Sociais pela Universidade Federal de Itajubá. Possui 5 anos de experiência em Recursos Humanos e atua em Clínica, Empresas, Orientação Profissional, Treinamentos e Palestras.</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+											
+
+											<div class="modal fade" id="myModal3A2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">O que o mercado de trabalho espera de você?</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Serão apresentadas as exigências atuais do mercado de trabalho para os acadêmicos que estejam buscando estágio ou processos seletivos de trainee em empresas. Uma mistura de reflexão e mudança de comportamento é o esperado para quem participar dessa conversa. </p>
+													
+													
+													<h3>Data: <strong>18/08/2015</strong></h3>
+													<h3>Horário: <strong>13:30</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 3ª pessoa da 1ª passada no slide-->
+
+								</div>
+							</div>
+							<!--Fim da 1ª passada-->
+
+							<!--2ª passada-->
+							<div class="item">
+								<div class="row">
+
+									<!--2ª pessoa da 2ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/weber.gif" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Rodrigo Weber dos Santos</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4A"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Rodrigo Weber</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											      <p>Rodrigo Weber dos Santos possui graduação em Engenharia Elétrica Eletrônica pela Universidade Federal do Rio de Janeiro (1996), mestrado em Engenharia de Sistemas e Computação pela Universidade Federal do Rio de Janeiro (1998) e doutorado em Matemática pela Universidade Federal do Rio de Janeiro (2002). Atualmente é professor associado da Universidade Federal de Juiz de Fora. Tem experiência na área Multidisciplinar de Modelagem Matemática e Computacional, com ênfase em Modelagem de Sistemas Biológicos, atuando principalmente nos seguintes temas: modelagem do coração, eletrofisiologia cardíaca, simulação numérica, equações diferenciais parciais e computação de alto desempenho. </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal4A" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Palestra: Modelagem Computacional: consolidação de uma disciplina multidisciplinar </h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											    	<p>Engenharia Computacional, Ciência Computacional e Modelagem Computacional, o que são, o que é, do que se trata?
+													Qual a relação com a Ciência da Computação? Exemplos de sucesso na academia e no mercado de trabalho.
+ 													</p>
+													<h3>Data: <strong>20/08/2015</strong></h3>
+													<h3>Horário: <strong>15:30</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 1ª pessoa da 2ª passada no slide-->
+
+
+									<!--2ª pessoa da 2ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/capturar.png" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">André Damião</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5A"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">André Damião</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>André Damião é um artista que trabalha de maneira transversal entre os campos da arte com novas mídias e a música experimental. Faz parte do NuSom (Núcleo de Pesquisa em Sonologia) na Universidade de São Paulo e do selo mulimídia TechArtLab no Rio de Janeiro. Seu trabalho é focado em estéticas da interface, live coding e mobilidade. Seus trabalhos já foram apresentados em galerias e salas de concerto de 17 países, incluindo festivais como o Sonorities em Belfast, Dotmov em Tokyo, MATA festival em Nova Iorque, White Noise na Cidade do México, Network Music Festival em Birmingham, Addicted2Random em Halle e Live Code Festival em Karlsruhe.
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal5A" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Interfaces metafóricas e metonímicas
+													</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Vivemos em uma cultura da interface, somos mediados por telas e botões em grande parte das tarefas do cotidiano, inclusive, para atividades criativas. A palestra trata de relações que são estabelecidas entre interfaces digitais, para criação e manipulação de conteúdo cultural (som, imagem, texto), e usuários. Interfaces de softwares para síntese de sons e imagens muitas vezes recorrem à metáforas visuais, como teclas de piano e baquetas de instrumentos percussivos, para aproximar seus usuários de signos relacionados ao fazer artístico. No entanto existe uma incompatibilidade entre metáforas e interfaces físicas do computador (mouse e teclado), além da própria rotina de trabalho (abrir e salvar arquivos, selecionar elementos de menus, etc .). Essa incompatibilidade é vista como um tipo de resistência (instrumentalidade) do meio computacional, que causa alterações no processo de criação. Logo, interfaces que permitem maior controle e uma curva de aprendizado longa, superariam as metáforas básicas propostas pelos desenvolvedores,e, portanto, seriam interfaces metonímicas. No encontro refletiremos sobre essas questões através de exemplos práticos e teorias desenvolvida por estudos críticos da interface.   
+ 													</p>
+												
+													<h3>Data: <strong>19/08/2015</strong></h3>
+													<h3>Horário: <strong>15:30 horas</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 2ª pessoa da 2ª passada no slide-->
+
+
+									<!--3ª pessoa da 2ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/pimentinha.jpeg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">André Pimenta</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5io"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5AFF"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5io" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">André Pimenta</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p> André Pimenta Freire é professor do Departamento de Ciência da Computação na Universidade Federal de Lavras e atua no mestrado em Administração Pública.Possui doutorado na área de Interação Humano-Computador pela Universidade de York, Inglaterra, e mestrado e graduação pela Universidade de São Paulo em São Carlos.Atua em pesquisas sobre design de sistemas Web e multimídia acessíveis para pessoas com deficiência esistemas de governo eletrônico com foco no cidadão.Atuou em diversos projetos nacionais e projetos internacionais em colaboração com instituições da União Europeia na área de acessibilidade para sistemas Web, além de projetos em colaboração com empresas e órgãos governamentais.    
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal5AFF" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Desenvolvimento de aplicações Web acessíveis para pessoas com deficiência.
+													</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>O desenvolvimento de sítios Web acessíveis é fundamental para que pessoas com deficiência possam ter acesso a conteúdo e a serviços essenciais do dia-a-dia.  Como indicado por Tim Berners-Lee, o inventor da Web, “o acesso à Web por todas as pessoas, independente de deficiências, é um aspecto fundamental”.  Nesta palestra, será apresentado um panorama geral sobre acessibilidade no desenvolvimento de aplicações Web acessíveis para pessoascom deficiência, destacando desafios e oportunidades de pesquisa e de negócios na área, em especial com mudanças recentes na legislação brasileira e sua relação com as perspectivas de oportunidades e desafios paradesenvolvedores no Brasil.  
+ 													</p>
+												
+													<h3>Data: <strong>18/08/2015</strong></h3>
+													<h3>Horário: <strong>15:30 horas</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 3ª pessoa da 2ª passada no slide-->	
+
+								</div>	
+							</div>
+							<!--Fim da 2ª passada-->
+							
+							<!--3ª passada-->
+							<div class="item">
+								<div class="row">
+									<!--1ª pessoa da 3ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/Edson.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Edson Costa</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6io"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6AFF"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6io" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Edson Costa</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p> Formado em Relações Internacionais e Mestrando Profissional em Empreendedorismo, ambos pela USP. Atuando como consultor de negócios por 6 anos, participou de projetos de planejamento estratégico em 25 Hospitais Universitários Federais, de redução do tempo de atendimento em agências do Uruguai, Chile e Paraguai para um Banco Brasileiro e de implantação de cartões refeição e alimentação para os funcionários de um dos maiores bancos no Brasil. Foi mentor de startup de biotecnologia que acumula mais de R$ 250 mil em prêmios nacionais e internacionais. Como empreendedor, está desenvolvendo soluções no mercado de saúde e de pagamento móvel.  
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal6AFF" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Empreendedorismo.
+													</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>A partir da experiência do apresentador em desenvolvimento de negócios no Programa Startup Chile e em São Paulo capital, o objetivo é debater temas como integração da equipe de negócios e desenvolvimento; ecossistema de negócios no Brasil (Investidores, Startup Brasil, Acelaradoras, Instituições de suporte, competições); importância da formação acadêmica e prática; cultura empreendedora; e conceitos, ferramentas e fontes de informação em empreendedorismo. Ao final, espera-se esclarecer os primeiros passos na formação de uma startup e estimular os participantes a colocarem em prática suas idéias. 
+ 													</p>
+												
+													<h3>Data: <strong>19/08/2015</strong></h3>
+													<h3>Horário: <strong>13:30 horas</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 1ª pessoa da 3ª passada no slide-->
+									
+									<!--2ª pessoa da 3ª passada no slide-->
+									<div class="col-sm-4">
+										<div class="single-event" align="center">
+											<img class="img-responsive" src="images/event/Bruno.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event-image">
+											<h4 style="color:white;" align="center">Bruno Aguirre </h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6ii"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6AFC"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6ii" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Bruno Aguirre </h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p> Bruno Aguirre é Gerente da equipe de desenvolvimento em TI para os aplicativos da GAPSO, recentemente adquirida pela Accenture. Atua na área de desenvolvimento há e 15 anos, 10 deles trabalhando também como recrutador. Formado em Engenharia de Sistemas de Informação pela UTN Argentina em 2002, realizou o TCC na Mercedes Benz Alemanha e cursou 2 anos de doutorado na Universidade de ULM – Alemanha.  
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal6AFC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Mesa redonda: Mercado de Trabalho X Mercado Acadêmico 
+													</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>O que uma empresa de tecnologia espera de um recém-formado? Como é o mercado de trabalho para um cientista da computação? Como aplicar os conhecimentos adquiridos na Universidade no dia a dia de uma empresa que desenvolve software de planejamento analítico?
+ 													</p>
+												
+													<h3>Data: <strong>21/08/2015</strong></h3>
+													<h3>Horário: <strong>15:00 horas</strong></h3>
+													<h3>Local: <strong>Anfiteatro da Biblioteca do CTAN</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim da 2ª pessoa da 3ª passada no slide-->
+
+									<!--Para adicionar mais um palestrante so adicione mais uma classe "col-sm-4" aqui em baixo-->
+									<!--Atençao a cada passada vc so pode colocar tres palestrantes para aparecer.Nessa 3ª passada ja tem 2 que esta nas classes "col-sm-4" entao so resta mais 1 palestrante para ser adicionado. QUando estourar o limite de 3 palestrantes por passada vc tera que criar uma nova classe "item" e adicionar mais tres novos palestrantes-->
+								</div>
+							</div>	
+							<!--Fim da 3ª passada-->
+						</div>		
+				</div>
+			</div>
+		</div>			
+	</div>
+</section><!--/#event-->
+
+<!--inicio sessao ministrantes -->
+<section id="event2" style="background-color:#000;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-sm-8 col-md-8">
+				<div id="event2-carousel" class="carousel slide" data-interval="false">
+					<h2 class="heading">MINISTRANTES</h2>
+						<a class="even-control-left" href="#event2-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event2-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<!-- inicio do slide -->
+						<div class="carousel-inner">
+							
+							<!--3 intens por linha na 1ª passada do slide -->					
+							<div class="item active">
+								<div class="row">
+
+									<!--foto do 1º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/marx.png" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Marx Viana</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4m"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mA"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal4m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Marx Viana</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>------</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal4mA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Introdução a linguagem de programação C++</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p>Linguagens de programação são responsáveis por transmitir instruções para o computador, para que certas tarefas possam ser realizadas. Os computadores entendem apenas sequências de números binários, e para um ser humano seria difícil decorar inúmeras combinações desses números como representações de instruções. Para que a transmissão de instruções para o computador ocorra de maneira mais fácil, foram criadas as linguagens de programação.
+
+																		Desde o surgimento da primeira linguagem de programação (Assembly), na década de 50, várias outras surgiram. A partir de então, uma grande evolução, no que diz respeito a estas linguagens, vem ocorrendo. Estas evoluções têm permitido que mais problemas sejam resolvidos, alcançando maior precisão, agilidade e qualidade.
+
+																		Quando uma nova linguagem surge, é muito comum que seus criadores tenham como base linguagens já conhecidas e que tiveram sucesso entre programadores. Com o C++ foi assim. Seu criador utilizou como base a linguagem C, implementando algumas melhorias. Isso também aconteceu com o criador do Java, que fez uso de várias linguagens como base, sendo uma das principais o C++.</p>
+																		
+																		<h3>Total de vagas: <strong>25 vagas</strong></h3>
+																		<h3>Data: <strong>21/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 1º item da primeira passada-->
+
+									<!--foto do 2º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="cenetr">
+											<img class="img-responsive" src="images/event2/grasiele.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Grasiele Duarte</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5m"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mA"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Grasiele Duarte</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Formada em Ciência da Computação em 2012 pela Universidade Presidente Antônio Carlos - Barbacena (MG).
+													Mestrado em Modelagem Computacional concluído em Março de 2015 pela Universidade 
+													Federal de Juiz de Fora - Juiz de Fora (MG).
+													Doutorado em Modelagem Computacional iniciado em Março de 2015 pela Universidade Federal de Juiz de Fora - Juiz de Fora (MG).
+													Mestre em Modelagem Computacional pela Universidade Federal de Juiz de Fora - Juiz de Fora (MG).
+													</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal5mA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Introdução à programação em C#</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>O minicurso terá como objetivo apresentar a linguagem de programação C#. Serão apresentados: Breve histórico, características da linguagem, sintaxe, recursos oferecidos, plataformas de desenvolvimento, interação com a linguagem com parte prática. </p>
+													
+													<h3>Total de vagas: <strong>25 vagas</strong></h3>
+																		<h3>Data: <strong>20/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 2º item da primeira passada-->
+
+									<!--foto do 3º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/bernardo.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Bernardo Rocha</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6m"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mA"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Bernardo Rocha</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Possui graduação em Ciência da Computação pela Universidade Federal de Juiz de Fora (2006), mestrado em Modelagem Computacional pela Universidade Federal de Juiz de Fora (2008) e doutorado pelo Laboratório Nacional de Computação Científica. Tem experiência na área de Ciência da Computação e Modelagem Computacional, com ênfase em computação de alto desempenho, métodos numéricos para solução de equações diferenciais, modelagem da eletrofisiologia cardíaca e mecânica computacional. Atualmente é professor do Departamento de Ciência da Computação e vice-coordenador do curso de Engenharia Computacional da Universidade Federal de Juiz de Fora.
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal6mA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Introdução à programação em Python</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p> Python é uma linguagem de alto nível, orientada a objetos e interpretada. Sua sintaxe favorece a legibilidade do código fonte e as diversas bibliotecas numéricas disponíveis facilitam o desenvolvimento. Para este curso recomenda-se um conhecimento básico de programação.  </p>
+													
+													<h3>Total de vagas: <strong>25 vagas</strong></h3>
+													<h3>Data: <strong>20/08/2015</strong></h3>
+													<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+													<h3>Local: <strong>DECOMP</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 3º item da primeira passada-->
+
+								</div>
+							</div>
+							<!-- Final 3 intens em uma linha (1ª passada) -->
+
+
+							<!--3 intens por linha na 2ª passada do slide -->
+							<div class="item">
+								<div class="row">
+
+									<!--foto do 1º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/guilherme.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Guilherme Valentim</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mSS"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mAA"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal4mSS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Guilherme Valentim</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>O Guilherme é co-fundador da Pluritech. A Pluritech nasceu quando três jovens decidiram parar de perder tempo desenvolvendo produtos que não acreditavam para criar soluções para pessoas e negócios. Tudo começou com o aplicativo Plurifix que recebeu apoio da Fumsoft. Hoje somos a empresa com a melhor relação custo benefício do mercado. Acesse nosso site.</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal4mAA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Banco de dados Mysql e PHP Data Objects</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p>Construção de uma aplicação web simples integrando PHP e Mysql via PDO. O mini curso será focado nos conceitos de banco de dados relacionais, onde criaremos entidades e definiremos seus relacionamentos através das chaves primárias e estrangeiras. Após a criação do banco de dados iremos passar pelos comandos SQL de manipulação de dados. Por fim vamos passar nossos comandos sql para o PHP e entender as vantagens de se utilizar a classe PDO. </p>
+																		
+																		<h3>Total de vagas: <strong>25 vagas</strong></h3>
+																		<h3>Data: <strong>19/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 1º item da primeira passada-->
+
+									<!--foto do 2º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/luis.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Luis H. Moreno</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mWW"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mAEE"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5mWW" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Luis H. Moreno</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Trabalha com tecnologias WEB há 6 anos, desenvolve com IonicFramework há pelo menos um ano e meio e vem participando de diversos eventos sobre o assunto. Foi sócio da empresa CiaWebSites desenvolvendo com PHP e WordPress e atualmente é sócio da Pluritech, empresa focada no desenvolvimento de aplicações híbridas									
+											        </p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal5mAEE" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Construindo Aplicações Híbridas com Apache Cordova</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Através deste minicurso será possível o aluno entender as diferenças entre App Híbrido vs App Nativo. O aluno será capaz de desenvolver aplicações híbridas usando a SDK IonicFramework com Apache Cordova. O Framework utiliza-se de tecnologias web como JS, HTML e CSS para construção do app e AngularJS como framework para gerenciar as regras de negócio da aplicação.</p>
+													
+													<h3>Total de vagas: <strong>25 vagas</strong></h3>
+													<h3>Data: <strong>19/08/2015</strong></h3>
+													<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+													<h3>Local: <strong>DECOMP</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 2º item da primeira passada-->
+
+									<!--foto do 3º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/farias.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Ricardo Farias</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mRR"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mAYY"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6mRR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;"> Sobre</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Formado em Fisica pela Universidade Federal Fluminense. Mestrado em Visão Computacional pela Coppe/UFRJ. Doutorado em Computacao Grafica pela Universidade Estadual de Nova York. Atualmente é professor na Coppe Engenharia de Sistemas e Computacao onde leciona entre outras disciplinas Visualiacao Cientifica, Processamento de Imagens e Programacao Paralela em GPU.</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal6mAYY" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Programacao GPU</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Neste mini-curso abordamos as principais caracteristicas da arquitetura das GPU da nVidia. Apresentamos a biblioteca CUDA e mostramos e analisamos codigos para ilustrar a programacao da GPU na pratica. </p>
+													
+													<h3>Total de vagas: <strong>25 vagas</strong></h3>
+													<h3>Data: <strong>21/08/2015</strong></h3>
+													<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+													<h3>Local: <strong>DECOMP</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 3º item da primeira passada-->
+
+								</div>
+							</div>	
+							<!-- Final 3 intens em uma linha (2ª passada) -->
+							
+
+
+							<!--3 intens por linha na 3ª passada do slide -->
+							<div class="item">
+								<div class="row">
+									
+									<!--foto do 1º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/huras.png" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Huras Alexandre</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mPP"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mAOO"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal4mPP" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Huras Alexandre</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>Técnico em informática no Colégio Cotemig. Atualmente cursando o 7º período de Ciência da C São João Del Rei. Conclusão em Julho de 2016. Possui nível avançado nas linguagens C#, MySQL e Action Script 3.0 (Utilizando POO). Nível médio nas linguagens Java e PHP</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal4mAOO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Introdução à Unity e Desenvolvimentos de Jogos.</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p>O jogo será um FPS. (Linguagem usada C#, não é necessário conhecimento dela, só uma noção boa de lógica de programação) 1 - Setar o ambiente de desenvolvimento na Unity 5 2 - Movimentar objetos no cenário. 3 - Ler input do teclado. 4 - Lidar com a física da Unity 5 - Criação de IA básica para os inimigos 6 - Colisão e Instanciação de objetos durante o jogo. 7 - Animações básicas e controle de animações. </p>
+																		
+																		<h3>Total de vagas: <strong>45 vagas</strong></h3>
+																		<h3>Data: <strong>21/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 1º item da primeira passada-->
+
+									<!--foto do 2º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/rafael-alencar.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Rafael Alencar</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mLL"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mANN"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5mLL" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Rafael Alencar</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Possui graduação em Tecnologia em Sistemas para Internet pelo Instituto Federal do Sudeste de Minas Gerais, aperfeiçoamento em Iniciação à Docência na Educação Profissional e Tecnológica pelo SENAI/RJ e cursa pós-graduação em Planejamento, Implementação e Gestão da Educação a Distância na Universidade Federal Fluminense. Atua como professor efetivo de Ensino Básico, Técnico e Tecnológico no Instituto Federal do Sudeste de Minas Gerais, Câmpus Barbacena, em regime de dedicação exclusiva. Tem experiência em Desenvolvimento Web, Programação para Dispositivos Móveis, Redes de Computadores e Segurança Computacional. 
+													</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal5mANN" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Desenvolvimento de aplicativos móveis híbridos com Android e HTML5</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>O minicurso abordará o desenvolvimento de aplicativos Android combinando componentes da plataforma com APIs HTML5, possibilitando a codificação de apps capazes de aproveitar as facilidades do desenvolvimento web com o desempenho nativo do Android</p>
+													
+													<h3>Total de vagas: <strong>45 vagas</strong></h3>
+													<h3>Data: <strong>19/08/2015</strong></h3>
+													<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+													<h3>Local: <strong>DECOMP</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 2º item da primeira passada-->
+
+									<!--foto do 3º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/darlinton.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Darlinton Carvalho</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mQQ"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mAZZ"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6mQQ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Darlinton Carvalho</h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>
+													Prof. Dárlinton Carvalho é Doutor e Mestre em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (PUC- Rio) e Bacharel em Ciência da Computação pela Universidade Federal de Ouro Preto (UFOP). Tem uma vasta experiência profissional, tendo atuado em diversas áreas de negócios. Trabalhou na Automatos e RNP (Rio de Janeiro), Siemens Corporate Research (Princeton , EUA) e no Ministério da Educação do Brasil (Brasília). Atualmente é Professor da Universidade Federal de São João del Rei (UFSJ). Seu principal interesse de pesquisa diz respeito ao estudo e desenvolvimento de tecnologias disruptivas para melhorar a forma como os seres humanos lidam com o seu bem-estar. Recentemente, seus esforços são para o desenvolvimento de aplicações para dispositivos móveis com suporte a usuários em atividades para melhorar o seu bem-estar (i.e. mHealth).
+													</p>
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+											<div class="modal fade" id="myModal6mAZZ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-header">
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											        <h4 class="modal-title" id="myModalLabel" style="color:#000;">Oficina de Desenvolvimento de Aplicativos Android com App Inventor </h4>
+											      </div>
+											      <div class="modal-body"style="color:#000;">
+											        <p>Neste minicurso será apresentado o App Inventor, uma plataforma para criação de aplicativos Android. Esta plataforma funciona na web, disponibilizando uma interface visual de modo a permitir que qualquer pessoa, mesmo sem conhecimento de comandos de programação, possa construir aplicativos. O minicurso introduz conceitos básicos sobre a plataforma e desenvolvimento de aplicações. Serão apresentados exemplos de aplicativos em jornalismo.</p>
+													
+													<h3>Total de vagas: <strong>15 vagas</strong></h3>
+													<h3>Data: <strong>21/08/2015</strong></h3>
+													<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+													<h3>Local: <strong>Prédio do Jornalismo</strong></h3>
+																						
+											      </div>
+											      <div class="modal-footer">
+											        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 3º item da primeira passada-->
+
+
+								</div>
+							</div>	
+							<!-- Final 3 intens em uma linha (3ª passada) -->
+							
+
+
+							<!--3 intens por linha na 4ª passada do slide -->
+							<div class="item">
+								<div class="row">
+									
+									<!--foto do 1º item da primeira passada-->
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="https://media.licdn.com/media/p/4/000/165/0de/354c063.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Alessandra de Falco</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mII"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal4mAGG"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal4mII" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Alessandra de Falco</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>Alessandra de Falco Brasileiro é professora do curso de Graduação em Comunicação Social - Jornalismo na Universidade Federal de São João Del-Rei (UFSJ), onde profere as disciplinas: Jornalismo Online, Oficina de Jornalismo Online e Planejamento Visual Gráfico; e orienta a empresa Mosaico Comunicação Jr. Também é docente bolsista da Capes do Núcleo de Ensino à Distância (NEAD/UFSJ) na Especialização em Educação Empreendedora e Especialização Mídias na Educação. Formada em Jornalismo pela PUC-Campinas, especialista em Jornalismo Científico pelo Labjor/Unicamp, mestre em Comunicação Social pela Metodista-SP e doutora em Educação pela Unicamp. Estágio Pós-Doutoral na Metodista-SP. Formada também em Letras - Bacharelado e Licenciatura - pela Unicamp. Tem experiência profissional e acadêmica principalmente nas áreas de Jornalismo Científico e Tecnológico, Comunicação Organizacional e Educação. Já escreveu para a revista eletrônica ComCiência e para o Webinsider/UOL. É membro da Rede de Pesquisa Jornalismo e Tecnologias Digitais (JorTec). Áreas de Interesse: Jornalismo Online - Tecnologia - Jornalismo Científico - Assessoria de Imprensa - Educação a Distância.</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal4mAGG" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Oficina de Desenvolvimento de Aplicativos Android com App Inventor</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p>Irá focar na elaboração de conteúdos para ser dispostos no App Inventor.</p>
+																		
+																		<h3>Total de vagas: <strong>15 vagas</strong></h3>
+																		<h3>Data: <strong>21/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+
+										</div>
+									</div>
+									<!--fim do 1º item da primeira passada-->
+									<!--segunda foto-->
+
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/Mario.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Mario de Carvalho</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mII"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal5mAGG"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal5mII" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Mario de Carvalho</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>Mario de Carvalho Joaquim Filho, bacharelando em Ciência da Computação pela Universidade Federal de Lavras (UFLA). Um dos coordenadores do Grupo de Estudos Java orientado pelo Prof. Ricardo Terra (DCC/UFLA). Experiência também em eletrônica e microcontroladores, monitor de Circuitos Eletrônicos, e atualmente monitor de Circuitos Digitais na UFLA.</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal5mAGG" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Oficina de Desenvolvimento de um Aplicativo Chat usando Tecnologias Java Avançadas</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p> O minicurso tem como objetivo desenvolver uma aplicação Java que realiza a comunicação com outras máquinas simulando um chat de internet. Serão abordadas as tecnologias Swing para criação de interfaces gráficas, Sockets para a comunicação entre as aplicações, Threads para realizar diversas tarefas ao “mesmo tempo” e o JDBC(Java DataBase Connectivity) para a comunicação com o banco de dados.</p>
+																		
+																		<h3>Total de vagas: <strong>25 vagas</strong></h3>
+																		<h3>Data: <strong>20/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+										</div>
+									</div>
+										<!--Segunda foto fim-->
+
+									<div class="col-sm-4">
+										<div class="single-event2" align="center">
+											<img class="img-responsive" src="images/event2/Elder.jpg" style="width: 262px; height: 262px; border-radius:240px;" alt="event2-image">
+											<h4 style="color:white;" align="center">Elder Marques</h4>
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mII"> 
+											  Sobre
+											</button>
+
+											<button  type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6mAGG"> 
+											  Atividade
+											</button>
+
+											<div class="modal fade" id="myModal6mII" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											  	<div class="modal-dialog" role="document">
+											    	<div class="modal-content">
+												      	<div class="modal-header">
+												        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Elder Marques</h4>
+												      	</div>
+												      	<div class="modal-body"style="color:#000;">
+												        	<p>Elder Guilherme Ambrozio Marques, bacharelando em Ciência da Computação pela Universidade Federal de Lavras (UFLA). Um dos coordenadores do Grupo de Estudos Java orientado pelo Prof. Ricardo Terra (DCC/UFLA). Com experiência em organização de eventos pelo centro acadêmico de ciência da computação e pela empresa júnior da computação(CompJunior) e com desenvolvimento de projetos pela mesma.</p>
+												      	</div>
+												      	<div class="modal-footer">
+												        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												      	</div>
+											    	</div>
+												</div>
+											</div>
+
+											<div class="modal fade" id="myModal6mAGG" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												  <div class="modal-dialog" role="document">
+													    <div class="modal-content">
+														      <div class="modal-header">
+														        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														        	<h4 class="modal-title" id="myModalLabel" style="color:#000;">Oficina de Desenvolvimento de um Aplicativo Chat usando Tecnologias Java Avançadas</h4>
+														      </div>
+														      <div class="modal-body"style="color:#000;">
+																        <p> O minicurso tem como objetivo desenvolver uma aplicação Java que realiza a comunicação com outras máquinas simulando um chat de internet. Serão abordadas as tecnologias Swing para criação de interfaces gráficas, Sockets para a comunicação entre as aplicações, Threads para realizar diversas tarefas ao “mesmo tempo” e o JDBC(Java DataBase Connectivity) para a comunicação com o banco de dados.</p>
+																		
+																		<h3>Total de vagas: <strong>25 vagas</strong></h3>
+																		<h3>Data: <strong>20/08/2015</strong></h3>
+																		<h3>Horário: <strong>8:00 as 12:00 (Pausa para o Coffe Break) </strong></h3>
+																		<h3>Local: <strong>DECOMP</strong></h3>
+															  </div>
+														      <div class="modal-footer">
+														        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														      </div>
+													    </div>
+												  </div>
+											</div>
+											<!--Segunda foto fim-->
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>	
+							<!-- Final 3 intens em uma linha (4ª passada) -->
+
+						</div>
+						<!-- fim do slide -->
+				</div>
+					<br>
+			</div>
+				<br><br><br>
+		</div>			
+	</div><!--Fecha conteiner-->
+</section> <!--fim sessao ministrantes --><!--/#event-->
+	
+	<section id="agenda">
+			<div class="container-fluid">
+				<div class="col-md-12 text-center"> 
+	        	<div class="box">           
+	            	<div class="row">
+	            		<div class="container">
+	            			<div class="col-md-3"></div>
+		            		<div class="col-lg-6 text">
+		            			<br>
+		            			<h1 style="color:white;" class="brand-name">Agenda</h1>
+		            			<h4 style="color:white;" class="brand-name">Clique nas figuras abaixo para ver a programação.</h4>
+		            		</div>     
+		            	</div>      		
+	            	</div>
+	            </div>
+	        	</div>
+			</div>
+			<!--Codigo elaborado por Italo Magalhaes -->
+			<div class="box">
+            	<br>
+            	<br>
+            	<div class="row" >
+            		<div class="container">
+            			<div class="col-md-3">
+            				<center><button type="button" class="btn btn-circle btn-lg " data-toggle="modal" data-target="#terca" style="border-radius:10px"><i class="fa fa-pencil-square-o fa-4x"></i></button>
+            				<p><strong>Terça - Feira</strong></p></center>
+            			</div>
+
+            			<div class="col-md-3 text">
+            				<center><button type="button" class="btn btn-circle btn-lg " data-toggle="modal" data-target="#quarta" style="border-radius:10px"><i class="fa fa-pencil-square-o fa-4x"></i></button>
+            				<p><strong>Quarta - Feira</strong></p></center>
+            			</div>
+
+            			<div class="col-md-3">
+            				<center><button type="button" class="btn btn-circle btn-lg " data-toggle="modal" data-target="#quinta" style="border-radius:10px"><i class="fa fa-pencil-square-o fa-4x"></i></button>
+            				<p><strong>Quinta - Feira</strong></p></center>
+            			</div>
+
+						<div class="col-md-3">
+							<center><button type="button" class="btn btn-circle btn-lg " data-toggle="modal" data-target="#sexta" style="border-radius:10px"><i class="fa fa-pencil-square-o fa-4x"></i></button>
+            				<p><strong>Sexta - Feira</strong></p></center>
+						</div>
+            			
+            		</div>
+            	</div>
+            	</br>
+            	</br>
+            	</br>
+            	</br>            	
+            </div>
+         <!-- Modal Segunda -->
+<div class="modal fade" id="segunda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Segunda - Feira</h4>
+      </div>
+      <div class="modal-body">
+      	<!-- inicio tabela -->
+        <div class="panel panel-primary ">
+                                      <!-- Default panel contents -->
+            <div class="panel-heading text-center">Programação da Segunda - Feira<br>17/08/2015</div>
+                <div class="panel-body ">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover " id="teste">
+                            <thead>
+                                <tr>
+                                    <th class="col-md-1 text-center" style="color:#000;">Hora</th>
+                                    <th class="col-md-1 text-center" style="color:#000;">Atividade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="success" style="color:#000;"><center>13:30 as 15:00</center></td>
+                                    <td class="success" style="color:#000;"><center>Oficina de Desenvolvimento de Aplicativos Móveis com AppInventor MIT</center></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end tabela -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Terça -->
+<div class="modal fade" id="terca" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Terça - Feira</h4>
+      </div>
+      <div class="modal-body">
+      	<!-- inicio tabela -->
+        <div class="panel panel-primary ">
+                                      <!-- Default panel contents -->
+            <div class="panel-heading text-center">Programação da Terça - Feira<br>18/08/2015</div>
+                <div class="panel-body ">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover " id="teste">
+                            <thead>
+                                <tr>
+                                    <th class="col-md-1 text-center" style="color:#000;">Hora</th>
+                                    <th class="col-md-1 text-center" style="color:#000;">Atividade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="success" style="color:#000;"><center>08:00 as 12:00</center></td>
+                                    <td class="success" style="color:#000;"><center>Credenciamento</center></td>
+                                </tr>
+                               <tr>
+		                            <td class="warning" style="color:#000;"><center>12:00 as 13:30</center></td>
+		                            <td class="warning" style="color:#000;"><center>Intervalo</center></td>
+		                        </tr>
+                                <tr>
+                                    <td><center style="color:#000;">13:30 as 14:00</center></td>
+                                    <td><center style="color:#000;">Abertura oficial</center></td>
+                                </tr>
+								 <tr>
+                                    <td><center style="color:#000;">14:00 as 15:00</center></td>
+                                    <td><center style="color:#000;">Palestra: "O que o mercado de trabalho espera de você?" com Ana Maria Biavati </center></td>
+                                </tr>
+                                <tr>
+                                    <td class="info" style="color:#000;"><center>15:00 as 15:30</center></td>
+                                    <td class="info" style="color:#000;"><center>Coffe-Break</center></td>
+                                </tr>
+                                <tr>
+                                    <td><center style="color:#000;">15:00  as 17:00</center></td>
+                                    <td><center style="color:#000;">Desenvolvimento de aplicações Web acessíveis para pessoas com deficiência com André Pimenta Freire</center></td>
+                                </tr>
+                                <tr>
+                                    <td><center style="color:#000;">17:00</center></td>
+                                    <td><center style="color:#000;">Maratona de Programação</center></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end tabela -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Quarta-->
+	<div class="modal fade" id="quarta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Quarta - Feira</h4>
+	      </div>
+		    <div class="modal-body">
+		      			<!-- inicio tabela -->
+		        <div class="panel panel-primary">
+		            <div class="panel-heading text-center">Programação da Quarta - Feira<br>19/08/2015</div>
+		                <div class="panel-body ">
+		                    <div class="table-responsive">
+		                        <table class="table table-bordered table-hover " id="teste">
+		                            <thead>
+		                                <tr>
+		                                    <th class="col-md-1 text-center" style="color:#000;">Hora</th>
+		                                    <th colspan="3" class="col-md-1 text-center" style="color:#000;">Atividade</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                            	<tr>
+											<td><center style="color:#000;">08:00 as 10:00</center></td>
+	                            							<td><center style="color:#000;">Desenvolvimento de aplicativos móveis híbridos com Android e HTML5 - Rafael J. de Alencar Almeida </center></td>
+											<td><center style="color:#000;">Banco de dados Mysql e PHP Data Objects (PDO) - Guilherme Valentim</center></td>
+											<td><center style="color:#000;">Construindo Aplicações Híbridas com Apache Cordova - Luis Henrique M. Capel Moreno </center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td class="info" style="color:#000;"><center>10:00 as 10:30</center></td>
+		                            		<td colspan="3" class="info" style="color:#000;"><center>Coffee-break</center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td><center style="color:#000;">10:30 as 12:00</center></td>
+		                            		<td><center style="color:#000;">Desenvolvimento de aplicativos móveis híbridos com Android e HTML5 - Rafael J. de Alencar Almeida  </center></td>
+											<td><center style="color:#000;">Banco de dados Mysql e PHP Data Objects (PDO) - Guilherme Valentim</center></td>
+											<td><center style="color:#000;">Construindo Aplicações Híbridas com Apache Cordova - Luis Henrique M. Capel Moreno</center></td>
+		                            	</tr>
+		                                <tr>
+		                                    <td class="warning" style="color:#000;"><center>12:00 as 13:30</center></td>
+		                                    <td colspan="3" class="warning" style="color:#000;"><center>Intervalo</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">13:30 as 15:00</center></td>
+		                            		<td colspan="3"><center style="color:#000;">Palestra sobre Empreendedorismo - Edson Rendel da Costa Filho</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td class="info" style="color:#000;"><center>15:00 as 15:30</center></td>
+		                                    <td colspan="3" class="info" style="color:#000;"><center>Coffee-Break</center></td>
+		                                    
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">15:00 as 17:00</center></td>
+		                                    <td colspan="3"><center style="color:#000;">Interfaces metafóricas e metonímicas - André Damião</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">17:00</center></td>
+		                                    <td colspan="3"><center style="color:#000;">Maratona de programação</center></td>
+		                                </tr>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                </div>
+		        </div>
+		        <!-- end tabela -->
+		    </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+		      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+<!-- Modal Quinta-->
+	<div class="modal fade" id="quinta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Quinta - Feira</h4>
+	      </div>
+		    <div class="modal-body">
+		      			<!-- inicio tabela -->
+		        <div class="panel panel-primary">
+		            <div class="panel-heading text-center">Programação da Quinta - Feira<br>20/08/2015</div>
+		                <div class="panel-body ">
+		                    <div class="table-responsive">
+		                        <table class="table table-bordered table-hover " id="teste">
+		                            <thead>
+		                                <tr>
+		                                    <th class="col-md-1 text-center" style="color:#000;">Hora</th>
+		                                    <th colspan="4" class="col-md-1 text-center" style="color:#000;">Atividade</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                            	<tr>
+		                            		<td><center style="color:#000;">08:00 as 10:00</center></td>
+		                            		<td><center style="color:#000;">Minicursos: Introdução a C'#' - Grasiele Regina Duarte </center></td>
+											<td><center style="color:#000;">Minicurso: Introdução a Python - Bernardo Rocha</center></td>
+											<td><center style="color:#000;">Java NET: Interaja com a Internet através de aplicativos Java com Mario de Carvalho  e Elder Marques </center></td>
+											<td><center style="color:#000;">Desenvolvimento de Aplicativos Móveis com App.Inventor - Darlinton Carvalho</center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td class="info" style="color:#000;"><center>10:00 as 10:30</center></td>
+		                            		<td colspan="4" class="info" style="color:#000;"><center>Coffee-break</center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td><center style="color:#000;">10:30 as 12:00</center></td>
+		                            		<td><center style="color:#000;">Minicursos: Introdução a C'#' - Grasiele Regina Duarte </center></td>
+											<td><center style="color:#000;">Minicurso: Introdução a Python - Bernardo Rocha</center></td>
+											<td><center style="color:#000;">Java NET: Interaja com a Internet através de aplicativos Java com Mario de Carvalho  e Elder Marques</center></td>
+											<td><center style="color:#000;">Desenvolvimento de Aplicativos Móveis com App.Inventor - Darlinton Carvalho</center></td>
+		                            	</tr>
+		                                <tr>
+		                                    <td class="warning" style="color:#000;"><center>12:00 as 13:30</center></td>
+		                                    <td colspan="4" class="warning" style="color:#000;"><center>Intervalo</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">13:30 as 15:00</center></td>
+		                            		<td colspan="4"><center style="color:#000;">Palestra "Análise Estática de Código" com Ricardo Terra</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td class="info" style="color:#000;"><center>15:00 as 15:30</center></td>
+		                                    <td colspan="4" class="info" style="color:#000;"><center>Coffee-Break</center></td>
+		                                    
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">15:00 as 17:00</center></td>
+		                                    <td colspan="4"><center style="color:#000;">Palestra " Modelagem Computacional: consolidação de uma disciplina multidisciplinar " com Prof. Rodrigo Weber dos Santos</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">17:00</center></td>
+		                                    <td colspan="4"><center style="color:#000;">Maratona de programação</center></td>
+		                                </tr>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                </div>
+		        </div>
+		        <!-- end tabela -->
+		    </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+		      </div>
+	    </div>
+	  </div>
+	</div>	                   
+
+
+
+<!-- Modal  Sexta -->
+<div class="modal fade" id="sexta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sexta - Feira</h4>
+      </div>
+	    <div class="modal-body">
+	      			<!-- inicio tabela -->
+	        <div class="panel panel-primary">
+	            <div class="panel-heading text-center">Programação de Sexta - Feira<br>21/08/2015</div>
+	                <div class="panel-body ">
+	                    <div class="table-responsive">
+	                        <table class="table table-bordered table-hover " id="teste">
+	                            <thead>
+	                                <tr>
+	                                    <th class="col-md-1 text-center" style="color:#000;">Hora</th>
+	                                    <th colspan="3" class="col-md-1 text-center" style="color:#000;">Atividade</th>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+		                            	<tr>
+		                            		<td><center style="color:#000;">08:00 as 10:00</center></td>
+		                            		<td><center style="color:#000;">Minicurso:Programacao GPU com Ricardo Cordeiro de Farias</center></td>
+							<td><center style="color:#000;">Minicurso: Introdução a linguagem de programação C++ - Marx Viana</center></td>
+							<td><center style="color:#000;">Desenvolvimento de Jogos com Huras Alexandre</center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td class="info" style="color:#000;"><center>10:00 as 10:30</center></td>
+		                            		<td colspan="3" class="info" style="color:#000;"><center>Coffee-break</center></td>
+		                            	</tr>
+		                            	<tr>
+		                            		<td><center style="color:#000;">10:30 as 12:00</center></td>
+		                            		<td><center style="color:#000;">Minicurso:Programacao GPU com Ricardo Cordeiro de Farias</center></td>
+							<td><center style="color:#000;">Minicurso: Introdução a linguagem de programação C++ - Marx Viana</center></td>
+							<td><center style="color:#000;">Desenvolvimento de Jogos com Huras Alexandre</center></td>
+		                            	</tr>
+		                                <tr>
+		                                    <td class="warning" style="color:#000;"><center>12:00 as 13:30</center></td>
+		                                    <td colspan="3" class="warning" style="color:#000;"><center>Intervalo</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">13:30 as 15:00</center></td>
+		                            		<td colspan="3"><center style="color:#000;">Palestra "Python: cabe no seu bolso, no seu micro e no seu cérebro." com Rodrigo Senra</center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td class="info" style="color:#000;"><center>15:00 as 15:30</center></td>
+		                                    <td colspan="3" class="info" style="color:#000;"><center>Coffee-Break</center></td>
+		                                    
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">15:00 as 17:00</center></td>
+		                                    <td colspan="3"><center style="color:#000;">Mesa redonda. Participação do recrutador da Accenture Bruno Aguirre / Guilherme Andrade / Alan Neves </center></td>
+		                                </tr>
+		                                <tr>
+		                                    <td><center style="color:#000;">17:00</center></td>
+		                                    <td colspan="3"><center style="color:#000;">Maratona de programação</center></td>
+		                                </tr>
+		                            </tbody>
+	                        </table>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- end tabela -->
+	    </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+	      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Completa-->
+<div class="modal fade bs-example-modal-lg" id="completa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Programação Completa</h4>
+      </div>
+	    <div class="modal-body">
+	      			<!-- inicio tabela --
+	        <div class="panel panel-primary">
+	            <div class="panel-heading text-center">Programação Completa</div>
+	                <div class="panel-body ">
+	                    <div class="table-responsive">
+	                        <table class="table table-bordered table-hover " id="teste">
+	                            <thead>
+		                            <tr>
+										<th colspan="4" style="color:#000;"><strong><center>Terça-Feira <br>18/08/2015</center></strong></th>
+									 </tr>
+									<tr  class="info">
+										<th style="color:#000;">Horário</th>
+										<th style="color:#000;">Atividade</th>
+										<th style="color:#000;">Temática</th>
+										<th style="color:#000;">Ministrante</th>
+									</tr>
+								</thead>
+								<tbody>
+								
+								 <tr>
+								  	<td style="color:#000;"><center>08:00 às 12:20 </center></td>
+									<td style="color:#000;"><center>CREDENCIAMENTO</center></td>
+									<td><center>&nbsp;</center></td>
+									<td><center></center></td>
+								 </tr>
+								 <tr>
+								  	<td style="color:#000;"><center>13:00 às 14:40</center></td>
+								  	<td style="color:#000;">Abertura e logo após palestra</td>
+								  	<td></td>
+								  	<td style="color:#000;">Psicologa Ana Maria Biavati</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>15:00 às 17:00</center></td>
+								  	<td style="color:#000;">Palestra</td>
+								  	<td style="color:#000;">Uso de APIs e Metadados na produção e visualização de informações jornalísticas</td>
+								  	<td style="color:#000;">Prof. Walter Lima</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>17:00</center></td>
+								  	<td style="color:#000;">Maratona de Programação</td>
+								  	<td></td>
+								  	<td></td>
+								 </tr>
+								 <thead>
+								 	<tr>
+										<th colspan="4" style="color:#000;"><strong><center>Quarta-Feira <br>19/08/2015</center></strong></th>
+									 </tr>
+									<tr  class="info">
+										<th style="color:#000;">Horário</th>
+										<th style="color:#000;">Atividade</th>
+										<th style="color:#000;">Temática</th>
+										<th style="color:#000;">Ministrante</th>
+									</tr>
+								</thead>
+								 <tr>
+								  	<td style="color:#000;"><center>08:00 às 12:20</center></td>
+								  	<td style="color:#000;">Minicursos</td>
+								  	<td style="color:#000;">Desenvolvimento de Jogos/ C++ (Marx) / Codeignater/ Apache Cordova </td>
+								  	<td style="color:#000;">Bruno Costa/</td>
+								 </tr>
+								 <tr>
+								  	<td style="color:#000;"><center>13:30 às 14:40</center></td>
+								  	<td style="color:#000;">Palestra</td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;">Google</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>15:00 às 17:00</center></td>
+								  	<td style="color:#000;">Palestra</td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;">EMC</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>17:00</center></td>
+								  	<td style="color:#000;">Maratona de Programação</td>
+								  	<td></td>
+								  	<td></td>
+								 </tr>
+ 								<thead>
+								 	<tr>
+										<th colspan="4" style="color:#000;"><strong><center>Quinta-Feira <br>20/08/2015</center></strong></th>
+									 </tr>
+									<tr  class="info">
+										<th style="color:#000;">Horário</th>
+										<th style="color:#000;">Atividade</th>
+										<th style="color:#000;">Temática</th>
+										<th style="color:#000;">Ministrante</th>
+									</tr>
+								</thead>
+								  <tr>
+								  	<td style="color:#000;"><center>08:00 às 12:20</center></td>
+								  	<td style="color:#000;">Minicursos</td>
+								  	<td style="color:#000;">C# / Python / Crie sua primeira aplicação Híbrida para Android no Intel XDK</td>
+								  	<td style="color:#000;"></td>
+								 </tr>
+								 <tr>
+								  	<td style="color:#000;"><center>13:30 às 14:40</center></td>
+								  	<td style="color:#000;">Palestra</td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;">Ricardo Terra</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>15:00 às 17:00</center></td>
+								  	<td style="color:#000;">Palestra</td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;">Prof. Rodrigo Weber do Santos</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>17:00</center></td>
+								  	<td style="color:#000;">Maratona de Programação</td>
+								  	<td></td>
+								  	<td></td>
+								 </tr>
+ 								<thead>
+								 	<tr>
+										<th colspan="4" style="color:#000;"><strong><center>Sexta-Feira <br>21/08/2015</center></strong></th>
+									 </tr>
+									<tr  class="info">
+										<th style="color:#000;">Horário</th>
+										<th style="color:#000;">Atividade</th>
+										<th style="color:#000;">Temática</th>
+										<th style="color:#000;">Ministrante</th>
+									</tr>
+								</thead>
+								  <tr>
+								  	<td style="color:#000;"><center>08:00 às 12:20</center></td>
+								  	<td style="color:#000;">Minicursos</td>
+								  	<td style="color:#000;">CUDA / Geocoleta</td>
+								  	<td style="color:#000;"></td>
+								 </tr>
+								 <tr>
+								  	<td style="color:#000;"><center>13:30 às 14:40</center></td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;"></td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>15:00 às 17:00</center></td>
+								  	<td style="color:#000;">Mesa Redonda</td>
+								  	<td style="color:#000;"></td>
+								  	<td style="color:#000;"> Participação do recrutador da accenture (antiga Gapso) Bruno Aguirre / Guilherme Andrade (ex-aluno do curso)</td>
+								 </tr>
+								  <tr>
+								  	<td style="color:#000;"><center>17:00</center></td>
+								  	<td style="color:#000;">Maratona de Programação</td>
+								  	<td ></td>
+								  	<td></td>
+								 </tr>
+ 								<thead>
+								</tbody>>
+	                        </table>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- end tabela --
+	    </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+	      </div>
+	     </div>
+    </div>
+  </div>
+</div>-->
+
+
+	    </section><!--/#agenda-->
+
+<!--Codigo elaborado por Italo Magalhaes
+	email: italo.ufsj@gmail.com
+ -->
+<section id="sponsor">
+		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<h2 style="color: white;">Organização</h2>	
+						<div class="col-md-4" align="center">	
+							<a href="http://linkedej.com.br">
+								<img src="images/sponsor/linked.png" width="200em" />
+							</a>
+						</div>
+						<div class="col-md-4" align="center">
+							<a href="http://dcomp.ufsj.edu.br">
+								<img src="images/sponsor/dcomp.png" width="200em"/>
+							</a>
+						</div>
+						<div class="col-md-4" align="center">
+							<a href="http://ufsj.edu.br">
+								<img src="images/sponsor/ufsj.png" width="200em"/>
+							</a>
+						</div>	
+					</div>			
+				</div>
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<h2 style="color: white;">Patrocinadores</h2>	
+						<div class="col-md-4">	
+							<a href="http://www.gapso.com.br/">
+								<img src="images/sponsor/gapso.png" width="200em"/>
+							</a>
+						</div>
+						<div class="col-md-4" align="center">
+							<a href="https://gerencianet.com.br/">
+								<img src="images/sponsor/gerenciaNet.png" width="250em"/>
+							</a>
+						</div>
+						<div class="col-md-4" align="center">
+							<a href="http://www.lsmbrasil.com.br/index.php?lang=pt">
+								<img src="images/sponsor/amg.png" width="200em"/>
+							</a>
+						</div>	
+					</div>			
+				</div>
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<h2 style="color: white;">Apoio</h2>	
+						<div class="col-md-3" align="center">	
+						</div>
+						<div class="col-md-3" align="absmiddle">	
+							<a href="#">
+								<img src="images/sponsor/pluritech.png" width="200em"/>
+							</a>
+						</div>
+						<div class="col-md-3" align="center">	
+							<a href="https://www.facebook.com/MasterBiscoitos">
+								<img src="images/sponsor/master.png" width="150em "/>
+							</a>
+						</div>
+						<div class="col-md-3" align="center">	
+						</div>			
+					</div>			
+				</div>
+				</br>
+				</br>
+				</br>
+				</br>
+			</div>
+			<div class="light">
+				<img class="img-responsive" src="images/light.png" width="400%">
+			</div>	
+		</div>			
+</section><!--/#sponsor-->
+
+	<!--/#login--
+	<section id="login" style="background-color:#000;">
+		<!-- Call to Action --
+    	<div class="call-to-action" id="login">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-4 col-md-offset-4 text-center">
+                    	<h2> Login</h2>
+                	</div>
+                	<div class="col-md-6 col-md-offset-3 text-center">
+                 
+
+	              <form role="form" class="form-horizontal" name="formLogin" method="POST" action="inscricao/checkLogin.php">
+    	        <form class="form-horizontal">
+	<fieldset>
+
+
+	<!-- Text input--
+	<div class="form-group">
+  		<label class="col-sm-2 control-label" for="email">E-mail</label>
+  		<div class="col-sm-7">
+    		<input id="email" name="email" placeholder="email@email.com" class="form-control" type="text">
+    
+  		</div>
+	</div>
+
+	<!-- Password input--
+	<div class="form-group">
+  		<label class="col-sm-2 control-label" for="password">Senha</label>
+  	<div class="col-sm-7">
+    	<input id="password" name="password" placeholder="Senha" class="form-control" type="password">
+    
+  	</div>
+	</div>
+
+	<!-- Button --
+	<div class="form-group">
+ 	<label class="col-sm-2 control-label" for="Enviar"></label>
+  	<div class="col-sm-1">
+    	<button type="submit" id="Enviar" name="Enviar" class="btn btn-success">Login</button>
+  	</div>
+	</div>
+
+	<div class="text-center">
+    	<h4>Se ainda nao se inscreveu, <a href="#"> clique aqui!</a></h4>
+    </div>
+
+	</fieldset>
+	</form>
+               		</div>
+
+                	</div>
+            	</div>
+    	</div>
+
+    	<!-- /Call to Action -->
+
+	</section><!--/#login-->
+
+	<section id="contact"><!--/#contact-->
+		<div id="map"><!--/#map-->
+			<div id="gmap-wrap">
+	 			<div id="gmap"> 				
+	 			</div>	 			
+	    	</div>
+	    	<div class="contact-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2">
+						<div class="contact-text">
+							<h3>Contato</h3>
+							<address>
+								E-mail: contato@secomp2015.linkedej.com.br<br>
+								Telefone: (32)8486-9393<br>
+								<a href="https://www.facebook.com/secompufsj">Facebook</a><br>
+							</address>
+						</div>
+						<div class="contact-address">
+							<h3>Endereço</h3>
+							<address>
+								Prédio da Computação<br>
+								Sala 2.00<br>
+								Campus Tancredo Neves - Ctan<br>
+								Avenida Visconde do Rio Preto, 36301-360 São João Del Rei
+							</address>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div id="contact-section">
+							<h3>Envie uma mensagem</h3>
+					    	<div class="status alert alert-success" style="display: none"></div>
+					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+					            <div class="form-group">
+					                <input type="text" name="name" class="form-control" required="required" placeholder="Nome">
+					            </div>
+					            <div class="form-group">
+					                <input type="email" name="email" class="form-control" required="required" placeholder="Email">
+					            </div>
+					            <div class="form-group">
+					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Escreva sua mensagem"></textarea>
+					            </div>                        
+					            <div class="form-group">
+					                <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+					            </div>
+					        </form>	       
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div><!--/#map-->		
+	</section><!--/#contact-->
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>IV SECOMP- Semana da Computação <br>Organização: <a target="_blank" href="http://linkedej.com.br">Linked Empresa Junior</a></p>                
+            </div>
+        </div>
+    </footer>
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+</body>
+</html>

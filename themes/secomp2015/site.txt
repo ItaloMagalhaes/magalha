@@ -1,0 +1,24 @@
+Site - SECOMP
+
+Palestrantes - nome, breve curriculo, nome da palestra e uma breve descrição
+Ministrantes - mesma coisa do palestrante
+Agenda
+Sobre a SECOMP 2015
+Contato/Localização
+Pagina de inscrição
+
+
+O que precisa ser feito:
+
+Criar seção de palestrantes e ministrantes
+Mudar Titulos
+Mudar Cor do menu
+Mudar imagens das seções 
+Mudar Patrocinadores e colocar apoiadores (Tirar os slides)
+
+3 Pessoas
+
+Grupo 1 - Lara - palestrantes e ministrantes
+Grupo 2 - Gava - Patrocinadores (apoiadores) e agenda
+GRupo 3 - Patrícia - Mudar as imagens, títulos, cor de menu, sobre a secomp, Pagina de inscrição
+	Mudar no menu "Purchase Tickets para Inscrições" e "Register for our next... Mudar para Isncrições"

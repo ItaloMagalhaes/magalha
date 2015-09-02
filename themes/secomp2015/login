@@ -1,0 +1,57 @@
+<section id="login" style="background-color:#000;">
+		<!-- Call to Action -->
+    	<div class="call-to-action" id="login">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-4 col-md-offset-4 text-center">
+                    	<h2> Login</h2>
+                	</div>
+                	<div class="col-md-6 col-md-offset-3 text-center">
+                 
+
+	              <form role="form" class="form-horizontal" name="formLogin" method="POST" action="inscricao/checkLogin.php">
+    	        <form class="form-horizontal">
+	<fieldset>
+
+
+	<!-- Text input-->
+	<div class="form-group">
+  		<label class="col-sm-2 control-label" for="email">E-mail</label>
+  		<div class="col-sm-7">
+    		<input id="email" name="email" placeholder="email@email.com" class="form-control" type="text">
+    
+  		</div>
+	</div>
+
+	<!-- Password input-->
+	<div class="form-group">
+  		<label class="col-sm-2 control-label" for="password">Senha</label>
+  	<div class="col-sm-7">
+    	<input id="password" name="password" placeholder="Senha" class="form-control" type="password">
+    
+  	</div>
+	</div>
+
+	<!-- Button -->
+	<div class="form-group">
+ 	<label class="col-sm-2 control-label" for="Enviar"></label>
+  	<div class="col-sm-1">
+    	<button type="submit" id="Enviar" name="Enviar" class="btn btn-success">Login</button>
+  	</div>
+	</div>
+
+	<div class="text-center">
+    	<h4>Se ainda nao se inscreveu, <a href="#"> clique aqui!</a></h4>
+    </div>
+
+	</fieldset>
+	</form>
+               		</div>
+
+                	</div>
+            	</div>
+    	</div>
+
+    	<!-- /Call to Action -->
+
+	</section><!--/#login-->

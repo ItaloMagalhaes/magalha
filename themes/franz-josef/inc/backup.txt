@@ -1,0 +1,3 @@
+line 52 do slider.php
+
+<p><a role="button" href="<?php the_permalink(); ?>" class="btn btn-lg btn-primary"><?php _e( 'View post', 'franz-josef' ); ?></a></p>
